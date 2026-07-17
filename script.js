@@ -132,3 +132,49 @@ reset_btn.addEventListener("click",()=>{
     calculation.innerHTML=""
 })
 
+let opset1=["x","/"]
+let firstop=document.querySelector(".op1")
+
+opset1.map((val,index)=>{
+    const childDiv=document.createElement("div")
+    childDiv.className = "ops"
+    childDiv.textContent=val
+    childDiv.id = `five-${index}`
+    firstop.appendChild(childDiv);
+})
+let opset2=["+","-"]
+let secondop=document.querySelector(".op2")
+opset2.map((val,index)=>{
+    const childDiv=document.createElement("div")
+    childDiv.className = "ops"
+    childDiv.textContent=val
+    childDiv.id = `six-${index}`
+    secondop.appendChild(childDiv);
+})
+
+let opset3=["Ans","="]
+let thirdop=document.querySelector(".op3")
+opset3.map((val,index)=>{
+    const childDiv=document.createElement("div")
+    childDiv.className = "ops"
+    childDiv.textContent=val
+    childDiv.id = `seven-${index}`
+    thirdop.appendChild(childDiv);
+})
+
+let mul_op=document.getElementById("five-0");
+mul_op.addEventListener("click",()=>{
+    calculation.innerHTML+="<b>x<b/>"
+})
+let divi_op=document.getElementById("five-1");
+divi_op.addEventListener("click",()=>{
+    calculation.innerHTML+="<b>/<b/>"
+})
+let plus_op=document.getElementById("six-0");
+plus_op.addEventListener("click",()=>{
+    calculation.innerHTML+="<b>+<b/>"
+})
+let minus_op=document.getElementById("six-1");
+minus_op.addEventListener("click",()=>{
+    calculation.innerHTML+="<b>-<b/>"
+})

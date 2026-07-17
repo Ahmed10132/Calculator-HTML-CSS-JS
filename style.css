@@ -120,7 +120,7 @@
     display: flex;
     flex-direction: column;
     justify-content:space-between;
-    align-items: ;
+    align-items: center ;
     font-size: xx-large;
     color: white;
     width: 100%;
@@ -144,15 +144,8 @@
     display: flex;
     justify-content: space-between;
 }
-.mul{
-    width:45%;
-    background-color: rgb(209, 16, 187);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: var(--btns-border-radius);
-}
-.divi{
+
+.ops{
     width: 45%;
     background-color: rgb(209, 16, 187);
     display: flex;
@@ -166,43 +159,13 @@
     display: flex;
     justify-content: space-between;
 }
-.plus{
-     width: 45%;
-    background-color: rgb(209, 16, 187);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-     border-radius: var(--btns-border-radius);
-}
-.minus{
-     width: 45%;
-    background-color: rgb(209, 16, 187);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-     border-radius: var(--btns-border-radius);
-}
 .op3{
     height: 25%;
       width: 100%;
     display: flex;
     justify-content: space-between;
 }
-.ans{
-     width: 45%;
-    background-color: rgb(209, 16, 187);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-     border-radius: var(--btns-border-radius);
-}
-.equal{
-     width: 45%;
-    background-color: rgb(209, 16, 187);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-     border-radius: var(--btns-border-radius);
-}
+
+
 
 
