@@ -12,6 +12,7 @@ function operation(firstnumber,op_val,secondnumber){
             return firstnumber / secondnumber
     }
 }
+let result=document.querySelector(".result")
 let numset1 = [7,8,9]
 
 
@@ -135,12 +136,13 @@ num_point_div.addEventListener("click",()=>{
 
 let num_exponent_div = document.getElementById("four-2");
 num_exponent_div.addEventListener("click",()=>{
-    calculation.innerHTML+= "e"
+    calculation.innerHTML+= "2.7"
 });
 
 let reset_btn=document.querySelector(".reset");
 reset_btn.addEventListener("click",()=>{
     calculation.innerHTML=""
+    result.innerHTML=""
 })
 
 let opset1=["x","/"]
@@ -189,15 +191,6 @@ minus_op.addEventListener("click",()=>{
     calculation.innerHTML=""
     firstint=Number(firstnumber);
 })
-let equal_op=document.getElementById("seven-1");
-equal_op.addEventListener("click",()=>{
-    let value2=calculation.innerHTML
-    secondnumber=(value2);
-    calculation.innerHTML=""
-    secondint=Number(secondnumber)
-    let ans=operation(firstint,op_val,secondint)
-    console.log(ans)
-})
 let mul_op=document.getElementById("five-0");
 mul_op.addEventListener("click",()=>{
     let valuemul=calculation.innerHTML
@@ -213,4 +206,13 @@ divi_op.addEventListener("click",()=>{
     firstnumber=(valuedivi);
     calculation.innerHTML=""
     firstint=Number(firstnumber);
+})
+let equal_op=document.getElementById("seven-1");
+equal_op.addEventListener("click",()=>{
+    let value2=calculation.innerHTML
+    secondnumber=(value2);
+    calculation.innerHTML=""
+    secondint=Number(secondnumber)
+    let ans=operation(firstint,op_val,secondint)
+    result.innerHTML=ans
 })

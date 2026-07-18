@@ -165,7 +165,125 @@
     display: flex;
     justify-content: space-between;
 }
+#one-0{
+    cursor: pointer;
+}
+#one-1{
+    cursor: pointer;
+}
 
-
-
-
+#one-2{
+    cursor: pointer;
+}
+#two-0{
+    cursor: pointer;
+}
+#two-1{
+    cursor: pointer;
+}
+#two-2{
+    cursor: pointer;
+}
+#three-0{
+    cursor: pointer;
+}
+#three-1{
+    cursor: pointer;
+}
+#three-2{
+    cursor: pointer;
+}
+#four-0{
+    cursor: pointer;
+}
+#four-1{
+    cursor: pointer;
+}
+#four-2{
+    cursor: pointer;
+}
+#five-0{
+    cursor: pointer;
+}
+#five-0{
+    cursor: pointer;
+}
+#five-1{
+    cursor: pointer;
+}
+#six-0{
+    cursor: pointer;
+}
+#six-1{
+    cursor: pointer;
+}
+#seven-0{
+    cursor: pointer;
+}
+#seven-1{
+    cursor: pointer;
+}
+#one-0:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;}
+#one-1:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;}
+#one-2:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;}
+#two-0:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;}
+#two-1:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;}
+#two-2:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;}
+#three-0:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;}
+#three-1:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;}
+#three-2:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;}
+#four-0:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;}
+#four-1:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;}
+#four-2:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;}
+#five-0:hover{
+    background-color: white;
+    color:rgb(209, 16, 187)
+}
+#five-1:hover{
+    background-color: white;
+    color:rgb(209, 16, 187)
+}
+#six-0:hover{
+    background-color: white;
+    color:rgb(209, 16, 187)
+}
+#six-1:hover{
+    background-color: white;
+    color:rgb(209, 16, 187)
+}
+#seven-0:hover{
+    background-color: white;
+    color:rgb(209, 16, 187)
+}
+#seven-1:hover{
+    background-color: white;
+    color:rgb(209, 16, 187)
+}
+.reset:hover{
+    background-color: white;
+    color:rgb(45, 87, 170) ;
+}
