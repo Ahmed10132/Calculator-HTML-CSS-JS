@@ -1,7 +1,19 @@
-let num1 = [];
-let num2 = [];
-
+function operation(firstnumber,op_val,secondnumber){
+    switch (op_val) {
+        case "+":
+            return firstnumber + secondnumber
+            break;
+        case "-":
+            return firstnumber - secondnumber
+            break;
+        case "x":
+            return firstnumber * secondnumber
+        case "/":
+            return firstnumber / secondnumber
+    }
+}
 let numset1 = [7,8,9]
+
 
 let calculation=document.querySelector(".calcs");
 let one=document.querySelector(".one");
@@ -34,7 +46,6 @@ let num_nine_div = document.getElementById("one-2");
 num_nine_div.addEventListener("click",()=>{
     calculation.innerHTML+= "9"
 });
-
 
 
 
@@ -161,20 +172,45 @@ opset3.map((val,index)=>{
     childDiv.id = `seven-${index}`
     thirdop.appendChild(childDiv);
 })
-
-let mul_op=document.getElementById("five-0");
-mul_op.addEventListener("click",()=>{
-    calculation.innerHTML+="<b>x<b/>"
-})
-let divi_op=document.getElementById("five-1");
-divi_op.addEventListener("click",()=>{
-    calculation.innerHTML+="<b>/<b/>"
-})
+let op_val;
 let plus_op=document.getElementById("six-0");
 plus_op.addEventListener("click",()=>{
-    calculation.innerHTML+="<b>+<b/>"
+    op_val="+"
+    let valueplus=calculation.innerHTML
+     firstnumber=(valueplus);
+     calculation.innerHTML=""
+     firstint=Number(firstnumber)
 })
 let minus_op=document.getElementById("six-1");
 minus_op.addEventListener("click",()=>{
-    calculation.innerHTML+="<b>-<b/>"
+    let valueminus=calculation.innerHTML
+    op_val="-"
+    firstnumber=(valueminus);
+    calculation.innerHTML=""
+    firstint=Number(firstnumber);
+})
+let equal_op=document.getElementById("seven-1");
+equal_op.addEventListener("click",()=>{
+    let value2=calculation.innerHTML
+    secondnumber=(value2);
+    calculation.innerHTML=""
+    secondint=Number(secondnumber)
+    let ans=operation(firstint,op_val,secondint)
+    console.log(ans)
+})
+let mul_op=document.getElementById("five-0");
+mul_op.addEventListener("click",()=>{
+    let valuemul=calculation.innerHTML
+    op_val="x"
+    firstnumber=(valuemul);
+    calculation.innerHTML=""
+    firstint=Number(firstnumber);
+})
+let divi_op=document.getElementById("five-1");
+divi_op.addEventListener("click",()=>{
+    let valuedivi=calculation.innerHTML
+    op_val="/"
+    firstnumber=(valuedivi);
+    calculation.innerHTML=""
+    firstint=Number(firstnumber);
 })
