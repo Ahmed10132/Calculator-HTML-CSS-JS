@@ -17,17 +17,17 @@
     gap: 8px;
     padding: 8px;
     background-color: yellow;
-    height: 70%;
+    height: 350px;
     aspect-ratio: 3/4;
     border: 2px solid black;
-    border-radius: 25px;
+    border-radius: 35px;
 
 }
 .screen{
     display: flex;
     flex-direction: column;
     justify-content:space-between;
-    border-radius: 17px;
+    border-radius: 35px;
     background-color: rgb(127, 255, 212);
     height: 30%;
     border: 2px solid black;
