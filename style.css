@@ -20,14 +20,14 @@
     height: 350px;
     aspect-ratio: 3/4;
     border: 2px solid black;
-    border-radius: 35px;
+    border-radius: 25px;
 
 }
 .screen{
     display: flex;
     flex-direction: column;
     justify-content:space-between;
-    border-radius: 35px;
+    border-radius: 17px;
     background-color: rgb(127, 255, 212);
     height: 30%;
     border: 2px solid black;
@@ -163,8 +163,6 @@
 .op3{
     height: 25%;
       width: 100%;
-    display: flex;
-    justify-content: space-between;
 }
 #one-0{
     cursor: pointer;
@@ -219,11 +217,12 @@
     cursor: pointer;
 }
 #seven-0{
+    height: 100%;
+    width: 100%;
     cursor: pointer;
 }
-#seven-1{
-    cursor: pointer;
-}
+
+
 #one-0:hover{
     background-color: rgba(255, 255, 255, 0.8);
     color: black;}
@@ -277,10 +276,6 @@
     color:rgb(209, 16, 187)
 }
 #seven-0:hover{
-    background-color: white;
-    color:rgb(209, 16, 187)
-}
-#seven-1:hover{
     background-color: white;
     color:rgb(209, 16, 187)
 }

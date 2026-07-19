@@ -165,7 +165,7 @@ opset2.map((val,index)=>{
     secondop.appendChild(childDiv);
 })
 
-let opset3=["Ans","="]
+let opset3=["="]
 let thirdop=document.querySelector(".op3")
 opset3.map((val,index)=>{
     const childDiv=document.createElement("div")
@@ -207,12 +207,12 @@ divi_op.addEventListener("click",()=>{
     calculation.innerHTML=""
     firstint=Number(firstnumber);
 })
-let equal_op=document.getElementById("seven-1");
+let equal_op=document.getElementById("seven-0");
 equal_op.addEventListener("click",()=>{
     let value2=calculation.innerHTML
     secondnumber=(value2);
     calculation.innerHTML=""
     secondint=Number(secondnumber)
-    let ans=operation(firstint,op_val,secondint)
-    result.innerHTML=ans
+    let answer=operation(firstint,op_val,secondint)
+    result.innerHTML=answer
 })
